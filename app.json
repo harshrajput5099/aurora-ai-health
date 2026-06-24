@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Aurora",
+    "slug": "aurora",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0A0A0F"
+    },
+    "android": {
+      "package": "com.aurora.health",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.aurora.health",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Aurora uses the microphone for voice health tracking."
+      }
+    },
+    "plugins": [
+      "expo-av"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8a86ca49-aeef-4a16-99b4-674b2c2dafce"
+      }
+    }
+  }
+}
